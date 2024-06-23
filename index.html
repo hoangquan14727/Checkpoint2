@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2>Contact Details</h2>
+    <form action="" class="form-container">
+      <div class="form-group">
+        <div class="input-group">
+          <input
+            required
+            type="text"
+            name="name"
+            autocomplete="off"
+            class="input input-top"
+            name="user_name"
+            id="user_name"
+          />
+          <label class="user-label" for="user_name">Name</label>
+        </div>
+        <div class="input-group">
+          <input
+            required
+            type="text"
+            name="email"
+            autocomplete="off"
+            class="input input-top"
+            name="user_email"
+            id="user_email"
+          />
+          <label class="user-label" for="user_email">Email</label>
+        </div>
+        <div class="input-group">
+          <input
+            required
+            type="text"
+            name="phone"
+            autocomplete="off"
+            class="input input-top"
+            name="user_phone"
+            id="user_phone"
+          />
+          <label class="user-label" for="user_phone">Phone</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-controls">
+          <input type="value" required="" />
+          <label name="user_address" id="user_address">
+            <span style="transition-delay: 0ms">A</span
+            ><span style="transition-delay: 50ms">d</span
+            ><span style="transition-delay: 100ms">d</span
+            ><span style="transition-delay: 150ms">r</span
+            ><span style="transition-delay: 200ms">d</span
+            ><span style="transition-delay: 250ms">r</span
+            ><span style="transition-delay: 300ms">e</span
+            ><span style="transition-delay: 350ms">s</span
+            ><span style="transition-delay: 400ms">s</span>
+          </label>
+        </div>
+        <div class="form-controls">
+          <input type="value" required="" />
+          <label name="user_message" id="user_message">
+            <span style="transition-delay: 0ms">M</span
+            ><span style="transition-delay: 50ms">e</span
+            ><span style="transition-delay: 100ms">s</span
+            ><span style="transition-delay: 150ms">r</span
+            ><span style="transition-delay: 200ms">s</span
+            ><span style="transition-delay: 250ms">a</span
+            ><span style="transition-delay: 300ms">g</span
+            ><span style="transition-delay: 350ms">e</span>
+          </label>
+        </div>
+      </div>
+
+      <button class="btn" type="submit" value="Order">Order</button>
+    </form>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script defer src="./app.js"></script>
+  </body>
+</html>
